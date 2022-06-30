@@ -1,0 +1,178 @@
+/* Typography */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-weight: 400;
+  font-family: "Oswald", sans-serif, Arial, sans-serif;
+  line-height: 1.1;
+  color: #262634;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 0.075em;
+}
+
+h1 small, .h1 small,
+h2 small, .h2 small,
+h3 small, .h3 small,
+h4 small, .h4 small,
+h5 small, .h5 small,
+h6 small, .h6 small {
+  color: inherit;
+}
+
+h1, .h1 {
+  font-size: 26px;
+}
+
+h2, .h2 {
+  font-size: 20px;
+}
+
+h3, .h3 {
+  font-size: 18px;
+}
+
+h4, .h4 {
+  font-size: 16px;
+}
+
+h5, .h5 {
+  font-size: 14px;
+}
+
+h6, .h6 {
+  font-size: 12px;
+}
+
+a {
+  position: relative;
+  color: #262634;
+  transition: color 0.4s;
+}
+
+a:hover, a:focus {
+  color: #dc9831;
+  text-decoration: none;
+}
+
+.title-group {
+  margin-bottom: 25px;
+}
+
+.title-group .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 1.38;
+  font-weight: 400;
+  color: #262634;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.title-group .title.big {
+  font-size: 26px;
+  margin-bottom: 2px;
+}
+
+.title-group .title-desc {
+  font-size: 13px;
+  color: #717179;
+  font-weight: 400;
+  line-height: 1.84;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.carousel-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 15px;
+  font-weight: inherit;
+  line-height: 1.67;
+  max-width: none;
+  margin: 0 auto 20px;
+  color: #717179;
+  font-weight: 400;
+}
+
+@media (min-width: 992px) {
+  .lead {
+    margin-bottom: 30px;
+  }
+}
+
+.text-custom,
+.text-primary {
+  color: #262634 !important;
+}
+
+.text-custom2,
+.text-accent {
+  color: #dc9831 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6,
+.text-white .h1, .text-white .h2, .text-white .h3, .text-white .h4, .text-white .h5, .text-white .h6 {
+  color: inherit;
+}
+
+.text-muted {
+  color: #777 !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+.text-spaced {
+  letter-spacing: 0.05em;
+}
+
+.text-lineth {
+  text-decoration: line-through;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semibold {
+  font-weight: 500;
+}
+
+blockquote {
+  position: relative;
+  padding: 5px 0 5px 35px;
+  margin: 20px 0;
+  font-size: 16px;
+  border-left: 2px solid transparent;
+}
+
+blockquote p {
+  margin-bottom: 12px;
+}
+
+blockquote cite {
+  font-size: 16px;
+  font-weight: 400;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopo</title>
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Include another html technique -->
+    <script src="/assets/js/include.js"></script>
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div w3-include-html="/blocks/header.html"></div>
+        <div w3-include-html="/blocks/aside.html"></div>
+
+        <div class="sidemenu-overlay"></div>    
+        
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-md-push-3">
+                        <div class="page-header text-center">
+                            <h1>Checkout</h1>
+                            <p>Checkout Your Products</p>
+                        </div><!-- End .page-header -->
+
+                        <div class="checkout-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs text-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#shipping" aria-controls="shipping" role="tab" data-toggle="tab"><span>1</span>Shipping</a></li>
+                                <li role="presentation"><a href="#payment" aria-controls="payment" role="tab" data-toggle="tab"><span>2</span>Payment</a></li>
+                                <li role="presentation"><a href="#confirmation" aria-controls="confirmation" role="tab" data-toggle="tab"><span>3</span>Confirmation</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="shipping">
+                                    <div class="tab-header">
+                                        <h4>Check As:</h4>
+                                        <div class="radio-inline-container">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="checkout-option" data-target=".check-as-guest">
+                                                    <span class="check"></span>
+                                                    <span class="circle"></span>
+                                                    Check out as Guest
+                                                </label>
+                                            </div><!-- End .radio -->
+
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="checkout-option" checked data-target=".signup-form">
+                                                    <span class="check"></span>
+                                                    <span class="circle"></span>
+                                                    Register
+                                                </label>
+                                            </div><!-- End .radio -->
+
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="checkout-option" data-target=".signin-form">
+                                                    <span class="check"></span>
+                                                    <span class="circle"></span>
+                                                    Login
+                                                </label>
+                                            </div><!-- End .radio -->
+                                        </div><!-- End .radio-inline-container -->
+                                    </div><!-- End .tab-header -->
+
+                                    <div class="check-as-guest target-area">
+                                        <h3>Continue as a guest.</h3>
+                                        <p>Skip this step and move down to below to continue to checkout.</p>
+                                    </div><!-- End .check-as-guest -->
+
+                                    <form action="#" class="signup-form target-area active">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>First Name*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Last Name*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Email*</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Password*</label>
+                                                    <input type="password" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Phone*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="radio-inline-container">
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="gender">
+                                                            <span class="check"></span>
+                                                            <span class="circle"></span>
+                                                            Male
+                                                        </label>
+                                                    </div><!-- End .radio -->
+
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="gender">
+                                                            <span class="check"></span>
+                                                            <span class="circle"></span>
+                                                            Female
+                                                        </label>
+                                                    </div><!-- End .radio -->
+                                                </div><!-- End .radio-inline-container -->
+                                            </div><!-- End .col-sm-4 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="clearfix form-action">
+                                            <input type="submit" class="btn btn-primary min-width" value="SIGN Up">
+                                        </div><!-- End .form-action -->
+                                    </form>
+
+                                    <form action="#" class="signin-form target-area">
+                                        <div class="form-group">
+                                            <label>E-mail Address*</label>
+                                            <input type="email" class="form-control" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="form-group">
+                                            <label>Password*</label>
+                                            <input type="password" class="form-control" required>
+                                        </div><!-- End .form-group -->
+
+                                        <div class="clearfix form-more mb20">
+                                            <div class="checkbox pull-left">
+                                                <label>
+                                                    <input type="checkbox" name="remember">
+                                                    <span class="checkbox-box"><span class="check"></span></span>
+                                                    Remember Me
+                                                </label>
+                                            </div><!-- End .checkbox -->
+                                            <a href="#" class="help-link">LOST YOUR PASSWORD?</a>
+                                        </div><!-- End .form-more -->
+
+                                        <div class="clearfix form-action">
+                                            <input type="submit" class="btn btn-primary pull-left min-width" value="SIGN IN">
+                                        </div><!-- End .form-action -->
+                                    </form>
+
+                                    <div class="mb5"></div><!-- margin -->
+
+                                    <h3>BILLING ADDRESS</h3>
+                                    <hr>
+                                    <div class="mb15"></div><!-- margin -->
+                                    <form action="#" class="billing-form">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Full Name*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Address*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Address 2*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>City*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>State*</label>
+                                                    <select class="form-control custom-select">
+                                                        <option value="Texas">Texas</option>
+                                                        <option value="New york">Canada</option>
+                                                        <option value="California">California</option>
+                                                    </select>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Zip code*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="clearfix form-action">
+                                            <div class="checkbox pull-right">
+                                                <label>
+                                                    <input type="checkbox" name="remember" checked>
+                                                    <span class="checkbox-box"><span class="check"></span></span>
+                                                    My Shipping and billing address are same
+                                                </label>
+                                            </div><!-- End .checkbox -->
+
+                                            <input type="submit" class="btn btn-accent min-width pull-left" value="Continue">
+                                        </div><!-- End .form-action -->
+                                    </form>
+                                </div><!-- End .tab-pane -->
+                                <div role="tabpanel" class="tab-pane" id="payment">
+                                    <div class="tab-header">
+                                        <h4>Payment Method:</h4>
+                                        <div class="radio-inline-container">
+                                            <img src="assets/images/payment-card.png" alt="Card" class="radio-img">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="payment-option" checked data-target=".payment-card">
+                                                    <span class="check"></span>
+                                                    <span class="circle"></span>
+                                                    Credit Card
+                                                </label>
+                                            </div><!-- End .radio -->
+
+                                            <img src="assets/images/payment-paypal.png" alt="Paypal" class="radio-img">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="payment-option" data-target=".payment-paypal">
+                                                    <span class="check"></span>
+                                                    <span class="circle"></span>
+                                                    Paypal
+                                                </label>
+                                            </div><!-- End .radio -->
+                                        </div><!-- End .radio-inline-container -->
+                                    </div><!-- End .tab-header -->
+
+                                    <form action="#" class="payment-card target-area active">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Name on Card*</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-6 -->
+
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Card number*</label>
+                                                    <input type="text" class="form-control form-with-icon" placeholder="0000-0000-0000-0000" required>
+
+                                                    <img src="assets/images/icon-input-card.png" alt="Card" class="form-icon">
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-6 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>CVV number*</label>
+                                                    <input type="text" class="form-control form-with-icon" required>
+                                                    <span class="form-icon">
+                                                        <img src="assets/images/icon-input-info.png" alt="Card">
+                                                    </span>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Exp. Month*</label>
+                                                    <select class="form-control custom-select">
+                                                        <option value="Month">Month</option>
+                                                        <option value="January">January</option>
+                                                        <option value="February">February</option>
+                                                    </select>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label>Exp. Year*</label>
+                                                    <select class="form-control custom-select">
+                                                        <option value="Year">Year</option>
+                                                        <option value="2017">2017</option>
+                                                        <option value="2018">2018</option>
+                                                    </select>
+                                                </div><!-- End .form-group -->
+                                            </div><!-- End .col-sm-4 -->
+                                        </div><!-- End .row -->
+
+                                        <div class="clearfix form-action">
+                                            <div class="btn-wrap pull-right">
+                                                <span class="btn-payment-info">$405.00</span>
+                                                <input type="submit" class="btn btn-accent" value="Pay Now">
+                                            </div><!-- End .btn-wrap -->
+                                        </div><!-- End .form-action -->
+                                    </form>
+
+                                    <div class="payment-paypal target-area">
+                                        <h3>Sorry Paypal is not available now.</h3>
+                                        <p>Please Try again later or use your credit card to pay.</p>
+                                    </div><!-- End .check-as-guest -->
+                                </div><!-- End .tab-pane -->
+                                <div role="tabpanel" class="tab-pane" id="confirmation">
+                                    <div class="checkout-confirm">
+                                        <img src="assets/images/okay.png" alt="Okay">
+                                        <h3>Payment Complete</h3>
+                                        <h4>Thank you for your order</h4>
+                                        <p>We have sent you an email with all the details of your order to your email address.</p>
+                                    </div><!-- End .checkout-confirm -->
+                                </div><!-- End .tab-pane -->
+                            </div>
+                        </div><!-- End .product-details-tab -->
+                        
+                    </div><!-- End .col-md-9 -->
+
+                    <aside class="col-md-3 col-md-pull-9 sidebar sidebar-shop">
+                        <div class="widget widget-box widget-shop-category active">
+                            <h3 class="widget-title">Category <a href="#" class="btn-filter" role="button">Filter<i class="fa fa-caret-down"></i></a></h3>
+                    
+                            <ul class="shop-category-list accordion">
+                                <li>
+                                    <a href="category.html">Fashion</a> 
+                                </li>
+                                <li>
+                                    <a href="category.html">Electronics </a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="category.html">Home &amp; Garden</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Sports Equipments</a>
+                                </li>
+                                <li>
+                                    <a href="category.html">Motors Products</a>
+                                </li>
+                                
+                    
+                            </ul>
+                        </div><!-- End .widget -->
+                    
+                        <div class="widget widget-box widget-shop-filter">
+                            <h3 class="widget-title">Filter <a href="#" class="btn-category" role="button">Categories<i class="fa fa-caret-down"></i></a></h3>
+                                
+                                <div class="filter-box">
+                                    <h5 class="filter-label">Sort By</h5>
+                                    <ul class="shop-filter-list">
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Default</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Popularity</a></li>
+                                        <li class="active"><a href="#"><i class="fa fa-caret-right"></i>Average Rating</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Newness</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Price: Low to high</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i>Price: high to Low</a></li>
+                                    </ul>
+                                </div><!-- End .filter-box -->
+                    
+                                <div class="filter-box">
+                                    <h5 class="filter-label">Price <span class="filter-price-text"><span class="filter-price-prefix">$</span><span id="filter-price-range"></span></span></h5>
+                                    <div class="price-slider-wrapper">
+                                        <div id="price-slider"></div><!-- End #price-slider -->
+                                    </div><!-- End .price-slider-wrapper -->
+                                </div><!-- End .filter-box -->
+                    
+                                <div class="filter-box">
+                                    <h5 class="filter-label">Color</h5>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <ul class="filter-color-list">
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #1e73be;"></span>
+                                                    <span class="filter-color-text">Blue</span>
+                                                </li>
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #c0c0c0;"></span>
+                                                    <span class="filter-color-text">Gray</span>
+                                                </li>
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #dc9814;"></span>
+                                                    <span class="filter-color-text">Orange</span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- End col-xs-6 -->
+                    
+                                        <div class="col-xs-6">
+                                            <ul class="filter-color-list">
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #736751;"></span>
+                                                    <span class="filter-color-text">Brown</span>
+                                                </li>
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #05ac92;"></span>
+                                                    <span class="filter-color-text">Green</span>
+                                                </li>
+                                                <li>
+                                                    <span class="filter-color" style="background-color: #fff;"></span>
+                                                    <span class="filter-color-text">White</span>
+                                                </li>
+                                            </ul>
+                                        </div><!-- End col-xs-6 -->
+                                    </div><!-- End row -->
+                                </div><!-- End .filter-box -->
+                    
+                                <a href="#" class="btn btn-apply btn-block">Apply Filter</a>
+                        </div><!-- End .widget -->
+                    
+                        <div class="widget widget-banner">
+                            <div class="banner banner-image">
+                                <a href="#" title="Brown Woman Shoes">
+                                    <img src="assets/images/banners/widget-banner.png" alt="Banner name">
+                                </a>
+                            </div>
+                        </div><!-- End .widget -->
+                    
+                        
+                    </aside><!-- End .col-md-3 -->
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .main -->
+        
+        <div w3-include-html="/blocks/footer.html"></div>
+        
+    </div>
+    
+    <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
+
+
+
+    
+    <!-- End -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+    (Load Extensions only on Local File Systems !  
+    The following part can be removed on Server for On Demand Loading) -->  
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            "use strict";
+
+            var revapi;
+            if ( $("#rev_slider").revolution == undefined ) {
+                revslider_showDoubleJqueryError("#rev_slider");
+            } else {
+                revapi = $("#rev_slider").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "assets/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay:"none",
+                    delay: 15000,
+                    navigation: {
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on"
+                        },
+                        arrows: {
+                            style: "custom",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_under: 768,
+                            hide_onleave: false,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "bottom",
+                                h_offset: 63,
+                                v_offset: 48
+                            },
+                            right: {
+                                h_align: "left",
+                                v_align: "bottom",
+                                h_offset: 85,
+                                v_offset: 48
+                            }
+                        },
+                        bullets: {
+                            enable: false
+                        }
+                    },
+                    responsiveLevels: [1200,480],
+                    gridwidth: [870,679,640,480],
+                    gridheight: [468,400,360,300],
+                    lazyType: "smart",
+                    spinner: "spinner2",
+                    parallax: {
+                        type: "off"
+                    },
+                    debugMode: false
+                });
+            }
+        });
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

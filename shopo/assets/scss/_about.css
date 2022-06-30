@@ -1,0 +1,138 @@
+/* About */
+.history-section:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.history-section .about-img {
+  margin: 0 auto 40px;
+}
+
+@media (min-width: 768px) {
+  .history-section .history-left {
+    float: left;
+    width: 57.5%;
+  }
+  .history-section .history-right {
+    float: right;
+    width: 34.1%;
+  }
+}
+
+.timeline-list {
+  margin: 40px 0;
+}
+
+@media (min-width: 992px) {
+  .timeline-list {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.timeline-list li {
+  position: relative;
+  margin-left: 70px;
+  padding-left: 38px;
+  padding-top: 1px;
+  min-height: 130px;
+  margin-bottom: 9px;
+  border-left: 1px solid #dc9831;
+}
+
+.timeline-list li:last-child {
+  min-height: 0;
+}
+
+.timeline-list li p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-list .timeline-date {
+  position: absolute;
+  left: -65px;
+  top: 3px;
+  color: #dc9831;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.timeline-list .timeline-dot {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: -8.5px;
+  top: 0;
+  background-color: #fff;
+  border: 3px solid #dc9831;
+  border-radius: 50%;
+}
+
+.timeline-list .timeline-dot:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 3px;
+  top: 3px;
+  z-index: 2;
+  background-color: #dc9831;
+  border-radius: 50%;
+}
+
+.timeline-list h3 {
+  color: #20202f;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+
+.team-member {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .team-member {
+    margin-bottom: 40px;
+  }
+}
+
+.team-member figure {
+  margin-bottom: 30px;
+}
+
+.team-member figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #101016;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  letter-spacing: 0;
+}
+
+.team-member p {
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #808080;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}

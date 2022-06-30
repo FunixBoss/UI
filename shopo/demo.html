@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopo</title>
+
+    <!-- Google Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Include another html technique -->
+    <script src="/assets/js/include.js"></script>
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div w3-include-html="/blocks/header.html"></div>
+        <div w3-include-html="/blocks/aside.html"></div>
+
+        <div class="sidemenu-overlay"></div>    
+        
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    
+
+                    <div w3-include-html="/blocks/aside-cate.html"></div>
+                    
+                </div><!-- End .row -->
+            </div><!-- End .container -->
+        </div><!-- End .main -->
+        
+        <div w3-include-html="/blocks/footer.html"></div>
+        
+    </div>
+    
+    <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
+
+
+
+    
+    <!-- End -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+    (Load Extensions only on Local File Systems !  
+    The following part can be removed on Server for On Demand Loading) -->  
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="assets/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            "use strict";
+
+            var revapi;
+            if ( $("#rev_slider").revolution == undefined ) {
+                revslider_showDoubleJqueryError("#rev_slider");
+            } else {
+                revapi = $("#rev_slider").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "assets/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay:"none",
+                    delay: 15000,
+                    navigation: {
+                        mouseScrollNavigation: "off",
+                        onHoverStop: "off",
+                        touch: {
+                            touchenabled: "on"
+                        },
+                        arrows: {
+                            style: "custom",
+                            enable: true,
+                            hide_onmobile: false,
+                            hide_under: 768,
+                            hide_onleave: false,
+                            tmp: '',
+                            left: {
+                                h_align: "left",
+                                v_align: "bottom",
+                                h_offset: 63,
+                                v_offset: 48
+                            },
+                            right: {
+                                h_align: "left",
+                                v_align: "bottom",
+                                h_offset: 85,
+                                v_offset: 48
+                            }
+                        },
+                        bullets: {
+                            enable: false
+                        }
+                    },
+                    responsiveLevels: [1200,480],
+                    gridwidth: [870,679,640,480],
+                    gridheight: [468,400,360,300],
+                    lazyType: "smart",
+                    spinner: "spinner2",
+                    parallax: {
+                        type: "off"
+                    },
+                    debugMode: false
+                });
+            }
+        });
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>
