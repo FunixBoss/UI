@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import * from '../../../public/assets/images/   '
 
 export default class Header extends Component {
     render() {
         return (
-            <div>
+            <>
                 <header className="header sticky-header">
                     <div className="container">
                     <a href="index.html" className="site-logo" title="Shopo - eCommerce Template">
-                        <img src={require('../../../public/assets/images/logo.png')} alt="Logo" />
+                        <img src={require('../../assets/images/logo.png')} alt="Logo" />
                         <span className="sr-only">Shopo</span>
                     </a>
                     <div className="search-form-container">
@@ -26,7 +25,7 @@ export default class Header extends Component {
                     <div className="dropdown cart-dropdown">
                         <a className="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                         <span className="cart-icon">
-                            <img src="{../../../public/assets/images/bag.png}" alt="Cart" />
+                            <img src={require('../../assets/images/bag.png')} alt="Cart" />
                             <span className="cart-count">4</span>
                         </span>
                         <i className="fa fa-caret-down" />
@@ -37,7 +36,7 @@ export default class Header extends Component {
                             <div className="product">
                             <figure className="product-image-container">
                                 <a href="product.html" title="Product Name">
-                                <img src="{../../../public/assets/images/products/small/product2.jpg}" alt="Product Image" />
+                                <img src={require('../../assets/images/products/small/product2.jpg')} alt="Product Image" />
                                 </a>
                             </figure>
                             <div>
@@ -52,7 +51,7 @@ export default class Header extends Component {
                             <div className="product">
                             <figure className="product-image-container">
                                 <a href="product.html" title="Product Name">
-                                <img src="{../../../public/assets/images/products/small/product1.jpg" alt="Product Image" />
+                                <img src={require('../../assets/images/products/small/product1.jpg')} alt="Product Image" />
                                 </a>
                             </figure>
                             <div>
@@ -78,7 +77,7 @@ export default class Header extends Component {
                     </a>
                     </div>{/* End .container-fluid */}
                 </header>{/* End .header */}
-            </div>
+            </>
         )
     }
 }
